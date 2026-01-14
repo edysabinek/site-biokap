@@ -17,7 +17,7 @@ function NavItem() {
                                     <a className="nav-link" href="#">
                                         {link.label}
                                     </a>
-                                    <ul className="submenu">
+                                    {link.children && (<ul className="submenu">
                                         {link.children.map((child) =>(
                                             <li key={child.label}>
                                                 <a className="sub-b" href={child.href}>
@@ -26,6 +26,7 @@ function NavItem() {
                                             </li>
                                         ))}
                                     </ul>
+                                        )}
                                 </>
                             )}
                         </li>

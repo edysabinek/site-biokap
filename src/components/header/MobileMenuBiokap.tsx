@@ -27,6 +27,7 @@ const MobileMenu = () => {
                     ) : (
                         <li className={`has-droupdown ${openMenuIndex === index ? 'mm-active' : ''}`} key={link.label}>
                             <a className="main" onClick={() => toggleMenu(index)} href="#">{link.label}</a>
+                            {link.children && (
                             <ul className={`submenu mm-collapse ${openMenuIndex === index ? 'mm-show' : ''}`}>
                             {link.children.map((child) =>(
                                 <li key={child.label}>
@@ -34,6 +35,7 @@ const MobileMenu = () => {
                                 </li>
                             ))}
                         </ul>
+                            )}
                         </li>
                     ))
 

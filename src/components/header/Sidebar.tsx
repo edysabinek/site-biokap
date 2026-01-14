@@ -1,6 +1,6 @@
 "use client"
 import CategoryMenu from './CategoryMenu';
-import MobileMenu from './MobileMenu';
+import MobileMenu from './MobileMenuBiokap';
 import { useState } from 'react';
 
 const Sidebar = () => {

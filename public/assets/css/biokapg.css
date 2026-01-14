@@ -1,3 +1,13 @@
 .hidden {
     display: none;
 }
+
+.bg_banner-2 {
+    background-image: url(/assets/images/banner/biokap/02.jpg);
+    height: 520px;
+    border-radius: 6px;
+}
+
+.bg_banner-2 p.disc {
+    color: black;
+}

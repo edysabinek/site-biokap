@@ -1,8 +1,11 @@
 {
   "name": "biokap",
   "version": "0.0.1",
+  "homepage": "https://edysabinek.github.io/site-biokap",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -14,7 +17,7 @@
     "@mui/material": "^7.1.1",
     "apexcharts": "^4.7.0",
     "bootstrap": "^5.3.5",
-    "next": "15.3.1",
+    "next": "^15.5.9",
     "react": "^19.0.0",
     "react-apexcharts": "^1.7.0",
     "react-bootstrap": "^2.10.9",
@@ -30,6 +33,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "gh-pages": "^6.3.0",
     "typescript": "^5"
   }
 }

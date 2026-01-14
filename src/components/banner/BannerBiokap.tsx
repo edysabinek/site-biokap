@@ -1,4 +1,5 @@
 "use client"
+import {whatsappLink} from "../utils/CommandWhatsapp";
 import React from 'react'
 
 function BannerTwo() {
@@ -17,15 +18,17 @@ function BannerTwo() {
                   Bénéficiez d'une réduction dès 10.000 Fcfa d'achat.
                 </span>
                 <h1 className="title">
-                  Produits naturels du<br />
-                    Cameroun
+                  Produits naturels du <br />
+                  Cameroun
                 </h1>
                 <p className="disc">
                   Sains, sans conservateurs et issus de l'agriculture locale. <br /> Découvrez de belles saveur...
                 </p>
                 <div className="rts-btn-banner-area">
                   <a
-                    href="#"
+                      href={whatsappLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     className="rts-btn btn-primary radious-sm with-icon"
                   >
                     <div className="btn-text">Commandez maintenant</div>

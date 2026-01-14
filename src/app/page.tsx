@@ -24,7 +24,7 @@ export default function Home() {
       <DealOfDay />
       <OfferAdd />
       <FeaturesGrid />
-      <BlogTwo />
+      {/*<BlogTwo />*/}
       <FooterTwo />
     </div>
   );

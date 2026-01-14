@@ -1,11 +1,8 @@
 {
   "name": "biokap",
   "version": "0.0.1",
-  "homepage": "https://edysabinek.github.io/site-biokap",
   "private": true,
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

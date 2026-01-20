@@ -19,10 +19,10 @@ function BannerTwo() {
                 </span>
                 <h1 className="title">
                   Produits naturels du <br />
-                  Cameroun
+                  Cameroun 🇨🇲 🇨🇲 🇨🇲
                 </h1>
                 <p className="disc">
-                  Sains, sans conservateurs et issus de l'agriculture locale. <br /> Découvrez de belles saveur...
+                  Des saveurs authentiques, pensées pour votre plaisir et votre bien-être. <br /> Découvrez les...
                 </p>
                 <div className="rts-btn-banner-area">
                   <a

@@ -1,0 +1,240 @@
+// Variables
+$primary-color: #2d5016;
+$secondary-color: #6b9b37;
+$accent-color: #f4a61e;
+$text-dark: #333333;
+$text-light: #666666;
+$bg-light: #f9faf8;
+
+.about-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f9faf8 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(107, 155, 55, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+  }
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+
+  @media (max-width: 968px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.about-text {
+  .about-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, $secondary-color, $primary-color);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  .about-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: $text-dark;
+    line-height: 1.2;
+    margin-bottom: 25px;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 28px;
+    }
+  }
+
+  .about-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: $text-light;
+    margin-bottom: 20px;
+  }
+}
+
+.about-values {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  .value-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateX(10px);
+      box-shadow: 0 8px 25px rgba(107, 155, 55, 0.15);
+    }
+
+    .value-icon {
+      font-size: 36px;
+      min-width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(107, 155, 55, 0.1), rgba(45, 80, 22, 0.1));
+      border-radius: 12px;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: $primary-color;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 14px;
+      color: $text-light;
+      line-height: 1.6;
+      margin: 0;
+    }
+  }
+}
+
+.about-image {
+  position: relative;
+
+  @media (max-width: 968px) {
+    order: -1;
+  }
+
+  .image-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+
+    .main-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 20px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    .image-decoration {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(135deg, $accent-color, $secondary-color);
+      border-radius: 20px;
+      z-index: -1;
+      opacity: 0.3;
+
+      @media (max-width: 768px) {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+
+  .stats-card {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    gap: 30px;
+
+    @media (max-width: 768px) {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .stat {
+      text-align: center;
+
+      h4 {
+        font-size: 32px;
+        font-weight: 700;
+        color: $primary-color;
+        margin: 0 0 5px 0;
+        background: linear-gradient(135deg, $secondary-color, $primary-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      p {
+        font-size: 12px;
+        color: $text-light;
+        margin: 0;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+// Animations
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-text,
+.about-image {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.about-image {
+  animation-delay: 0.2s;
+}

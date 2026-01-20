@@ -3,13 +3,14 @@ import BannerBiokap from "@/components/banner/BannerBiokap";
 import HeaderBiokap from "@/components/header/HeaderBiokap";
 import FeatureBiokap from "@/components/feature/FeatureBiokap";
 import WeeklyBestSellingTwo from "@/components/product/WeeklyBestSellingTwo";
-import MethodOne from "@/components/common/MethodOne";
+import Method from "@/components/common/MethodBiokap";
 import OfferAdd from "@/components/common/OfferAdd";
 import DealOfDay from "@/components/product/DealOfDay";
-import FeaturesGrid from "@/components/product/FeaturesGrid";
+import FeaturesGrid from "@/components/product/FeaturesGridBiokap";
 import BlogTwo from "@/components/blog/BlogTwo";
-import FooterTwo from "@/components/footer/FooterTwo";
+import Footer from "@/components/footer/FooterBiokap";
 import CategoryBiokap from "@/components/category/CategoryBiokap";
+import AboutBiokap from "@/components/about/AboutBiokap";
 
 
 export default function Home() {
@@ -20,12 +21,13 @@ export default function Home() {
       <CategoryBiokap />
       <FeatureBiokap />
       {/*<WeeklyBestSellingTwo />*/}
-      <MethodOne />
       {/*<DealOfDay />*/}
       {/*<OfferAdd />*/}
       <FeaturesGrid />
       {/*<BlogTwo />*/}
-      <FooterTwo />
+        <AboutBiokap />
+      <Method />
+      <Footer />
     </div>
   );
 }

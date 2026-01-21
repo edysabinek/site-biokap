@@ -1,17 +1,20 @@
 "use client"
 import React from 'react'
-import DealOfDayMain from "@/components/product-main/DealOfDayMain";
-import Product from '@/data/Product.json';
+import DealOfDayMain from "@/components/product-main/DealOfDayMainBiokap";
+import Product from '@/data/Products.json';
 
 
 interface PostType {
-    category?: string;
-    slug: string;
-    image: string;
-    title?: string;
-    author?: string;
-    publishedDate?: string;
-    price?: string;
+    id: number;
+    name: string;
+    description: string;
+    price: string;
+    images: {
+        src: string;
+    }[];
+    category: string;
+    available ?: boolean;
+    weight ?: number;
 }
 
 
@@ -33,14 +36,6 @@ function FeaturesGrid() {
     // Prepare post groups
     const postsSection1 = getPostsByIndices(postIndicesSection1);
     const postsSection2 = getPostsByIndices(postIndicesSection2);
-    const postsSection3 = getPostsByIndices(postIndicesSection3);
-    const postsSection4 = getPostsByIndices(postIndicesSection4);
-
-
-
-
-
-
 
     return (
         <div className="new-offer-section-area rts-section-gap bg_light-1">
@@ -68,9 +63,9 @@ function FeaturesGrid() {
                                     >
                                         <div className="single-shopping-card-one deals-of-day new-deal-offer-border-right">
                                             <DealOfDayMain
-                                                Slug={post.slug}
-                                                ProductImage={post.image}
-                                                ProductTitle={post.title}
+                                                Slug={post.name}
+                                                ProductImage={post.images[0].src}
+                                                ProductTitle={post.name}
                                                 Price={post.price}
                                             />
                                         </div>
@@ -104,9 +99,9 @@ function FeaturesGrid() {
                                     >
                                         <div className="single-shopping-card-one deals-of-day new-deal-offer-border-right">
                                             <DealOfDayMain
-                                                Slug={post.slug}
-                                                ProductImage={post.image}
-                                                ProductTitle={post.title}
+                                                Slug={post.name}
+                                                ProductImage={post.images[0].src}
+                                                ProductTitle={post.name}
                                                 Price={post.price}
                                             />
                                         </div>

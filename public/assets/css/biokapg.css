@@ -3,14 +3,14 @@
 }
 
 .bg_banner-2 {
-    background-image: url(/assets/images/banner/biokap/02.jpg);
+    background-image: url(/assets/images/banner/biokap/04.png);
     height: 520px;
     border-radius: 6px;
 }
 
-.bg_banner-2 p.disc {
-    color: black;
-}
+/*.bg_banner-2 p.disc {*/
+/*    color: black;*/
+/*}*/
 
 .single-category-one img {
     max-width: 100%;
@@ -23,12 +23,20 @@
     z-index: -1;
 }
 
+.easyway-buying-area-wrapper .single-easy-way-buying-area svg{
+    color: var(--color-primary);
+}
+
 
 
 /*Mobile */
 @media only screen and (max-width: 575px) {
     .feature-product-area-single .inner-image {
         right: -140px;
+        top: 55%;
+    }
+    .feature-product-area-single.two .inner-image{
+        right: -120px;
         top: 55%;
     }
 }

@@ -41,7 +41,7 @@ function CategoryOne() {
                                             <SwiperSlide key={product.id}>
                                                 <div className="single-category-one">
                                                     <a href="/shop">
-                                                        <img src={product.image} alt="category" />
+                                                        <img src={product.images[0]} alt="category" />
                                                         <p>{product.category}</p>
                                                     </a>
                                                 </div>

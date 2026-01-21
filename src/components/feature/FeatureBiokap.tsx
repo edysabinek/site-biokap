@@ -11,12 +11,12 @@ function FeatureTwo() {
               {/* single feature product area */}
               <div className="feature-product-area-single bg_image">
                 <div className="inner-image">
-                  <img src="assets/images/feature/package.png" alt="feature" />
+                  <img src="assets/images/feature/game.png" alt="feature" />
                 </div>
                 <div className="inner-content">
                   <h2 className="title">
-                    Fruits séchés <br />
-                    Sans <span>conservateurs</span>
+                    Obtenez vos <br />
+                    fruits <span>déshydratés</span>
                   </h2>
                   <div className="price-area">
                     <span>Dès</span>
@@ -30,12 +30,12 @@ function FeatureTwo() {
               {/* single feature product area */}
               <div className="feature-product-area-single two bg_image">
                 <div className="inner-image">
-                  <img src="assets/images/feature/package.png" alt="feature" />
+                  <img src="assets/images/feature/game_epices.png" alt="feature" />
                 </div>
                 <div className="inner-content">
                   <h2 className="title">
-                      Épices et thé <br />
-                      100% <span>Naturels</span>
+                      Obtenez vos<br />
+                      thés & <span>épices</span>
                   </h2>
 
                   <div className="price-area">

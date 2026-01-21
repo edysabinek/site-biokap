@@ -6,7 +6,7 @@ function BannerTwo() {
   return (
     <div>
   {/* banner area two start */}
-  <div className="rts-banner-area-two mt--60">
+  <div className="rts-banner-area-two mt--20">
     <div className="container-2">
       <div className="row">
         <div className="col-lg-12">
